@@ -33,3 +33,6 @@ return newDate.style = `background: ${color}; padding: 3px 9px; border-radius: 3
 }
 
 setInterval(changeColorDate, 1000);
+
+const unordered = document.querySelector('ul');
+unordered.style.listStyle = 'none';
