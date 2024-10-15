@@ -16,11 +16,13 @@ return year.style = `color: ${color}; padding: 3px 9px; border-radius: 3px; font
 
 setInterval(changeColor, 1000);
 
+const unordered = document.querySelector('ul');
 const fullDateTime = new Date();
 const newDate = document.createElement('p');
 newDate.innerText = `${fullDateTime}`;
 newDate.id = 'date';
 wrapper.appendChild(newDate);
+wrapper.insertBefore(newDate, unordered);
 
 function changeColorDate(){
   let arr = [];
