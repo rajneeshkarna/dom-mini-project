@@ -14,6 +14,9 @@ let color = `rgb(${arr[0]}, ${arr[1]}, ${arr[2]})`;
 return year.style = `color: ${color}; padding: 3px 9px; border-radius: 3px; font-size: 42px`; 
 }
 
+const title = document.querySelector('h1');
+title.style = 'text-align: center; font-size: 42px; margin: 18px auto'
+
 setInterval(changeColor, 1000);
 
 const unordered = document.querySelector('ul');
