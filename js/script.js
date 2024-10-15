@@ -17,6 +17,9 @@ return year.style = `color: ${color}; padding: 3px 9px; border-radius: 3px; font
 const title = document.querySelector('h1');
 title.style = 'text-align: center; font-size: 42px; margin: 18px auto'
 
+const headingTwo = document.querySelector('h2');
+headingTwo.style = 'text-align: center; text-decoration: underline; margin-bottom: 21px'
+
 setInterval(changeColor, 1000);
 
 const unordered = document.querySelector('ul');
