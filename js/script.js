@@ -1,5 +1,5 @@
 const wrapper = document.querySelector('.wrapper');
-wrapper.style= 'display: flex; flex-direction: column; width: 75%; height: 80vh; background-color: rgb(63, 201, 192); color: black; margin: 60px auto; padding: 0px 36px';
+wrapper.style= 'display: flex; flex-direction: column; width: 75%; height: 88vh; background-color: rgb(63, 201, 192); color: black; margin: 60px auto; padding: 0px 36px';
 const firstHeading = document.querySelector('h1');
 firstHeading.innerHTML = firstHeading.innerHTML.replace('2020', '<span id = "year">2020</span>');
 const year = document.getElementById('year');
