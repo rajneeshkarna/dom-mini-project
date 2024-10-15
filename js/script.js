@@ -1,5 +1,5 @@
 const wrapper = document.querySelector('.wrapper');
-wrapper.style= 'display: flex; flex-direction: column; width: 60%; height: 60vh; background-color: rgb(63, 201, 192); color: black; margin: 60px auto; padding: 0px 36px';
+wrapper.style= 'display: flex; flex-direction: column; width: 75%; height: 80vh; background-color: rgb(63, 201, 192); color: black; margin: 60px auto; padding: 0px 36px';
 const firstHeading = document.querySelector('h1');
 firstHeading.innerHTML = firstHeading.innerHTML.replace('2020', '<span id = "year">2020</span>');
 const year = document.getElementById('year');
@@ -34,5 +34,20 @@ return newDate.style = `background: ${color}; padding: 3px 9px; border-radius: 3
 
 setInterval(changeColorDate, 1000);
 
-const unordered = document.querySelector('ul');
-unordered.style.listStyle = 'none';
+const list = document.querySelectorAll('li');
+
+list.forEach((element) => {
+  element.style = 'padding: 5px 9px; margin: 3px; list-style: none; width: 100%; color: white; font-size: 18px';
+  if(element.innerText.includes('Challenge Done')) {
+    element.style.background = 'green';
+  }
+  else if(element.innerText.includes('Challenge Ongoing')) {
+    element.style.background
+     = 'yellow';
+     element.style.color = 'black';
+  }
+  else if(element.innerText.includes('Challenge Coming')) {
+    element.style.background = 'red';
+  }
+});
+
