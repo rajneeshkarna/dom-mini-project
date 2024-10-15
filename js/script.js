@@ -116,7 +116,7 @@ setInterval(changeColorDate, 1000);
 const list = document.querySelectorAll('li');
 
 list.forEach((element) => {
-  element.style = 'padding: 5px 9px; margin: 3px; list-style: none; width: 100%; color: white; font-size: 18px';
+  element.style = 'padding: 9px 9px; margin-bottom: 9px; list-style: none; width: 100%; color: white; font-size: 18px; text-align: center';
   if(element.innerText.includes('Challenge Done')) {
     element.style.background = 'green';
   }
