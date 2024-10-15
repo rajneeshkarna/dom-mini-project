@@ -11,7 +11,7 @@ function changeColor(){
     arr.push(random);
 }
 let color = `rgb(${arr[0]}, ${arr[1]}, ${arr[2]})`;
-return year.style = `color: ${color}; padding: 3px 9px; border-radius: 3px; font-size: 42px`; 
+return year.style = `color: ${color}; padding: 3px 9px; border-radius: 3px; font-size: 60px; font-weight: 900`; 
 }
 
 const title = document.querySelector('h1');
